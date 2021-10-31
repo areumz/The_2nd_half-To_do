@@ -1,0 +1,11 @@
+#quote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.quoteColor {
+    background-color: lightgrey;
+}
