@@ -20,7 +20,6 @@
 </br>
 
 ## 3. 핵심 기능
-- (작업한 파일들은 gh-pages 브랜치에 업로드)   
 
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
@@ -36,6 +35,9 @@
 - 간단한 To Do를 작성하고 엔터키를 누르면 화면에 표시되도록 구현했습니다
 - localStorage.setItem과 getItem을 통해 새로고침을 해도 화면에 To Do List가
 저장되어있도록 했습니다
+
+### Today's saying
+- 동기부여를 할 수 있는 명언이 랜덤으로 화면에 표시되도록 구현했습니다
 
 </div>
 </details>
