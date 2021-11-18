@@ -1,4 +1,4 @@
-const toDoForm = document.querySelector(".col-3");
+const toDoForm = document.querySelector(".todo-form");
 const toDoInput = document.querySelector(".effect-16");
 const toDoList = document.getElementById("todo-list");
 
