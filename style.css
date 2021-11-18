@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* Reset CSS */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active 
+input:focus,
+input:active 
+textarea:focus,
+textarea:active {
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left:0 ;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.33333;
+    color: #0C090A;
+}
+
+body {
+    background-image: url(./assets/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 60px;
+}
+
+/* xmas and newyear */
+.xmasnewyear-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.xmas-div,
+.newyear-div {
+    width:200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.xmas-div {
+    background-color: rgba(228,27,23,0.8);
+    margin-bottom: 20px;
+}
+
+.newyear-div {
+    background-color: rgba(254,252,255,0.8);
+    margin-bottom: 30px;    
+}
+
+.xmas-div h2 {
+    display:block;
+    font-weight: 700;
+    font-size:30px;
+    
+}
+
+.newyear-div h2 {
+    display:block;
+    font-weight: 700;
+    font-size:30px;
+    padding-top: 20px;
+}
+
+.xmas-div,
+.newyear-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#xmasdday,
+#newyeardday {
+    font-weight: 700;
+}
+
+/* To do */
+#todo-list {
+    color:white;
+}
+
+.todo-form {
+    float: left;
+    position: relative;
+    margin-bottom: 40px;
+} 
+
+.todo-form label {
+    font-weight: 700;
+    font-size:20px;
+}
+
+input[type="text"]{
+    font: 15px/24px 'Muli', Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+/*포커스시 아웃라인 지우기*/
+:focus{outline: none;}
+
+.effect-16 {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.effect-16 ~ .focus-border{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4caf50;
+    transition: 0.4s;
+}
+
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;
+}
+
+.effect-16 ~ label{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.effect-16:focus ~ label, .has-content.effect-16 ~ label{
+    top: -16px;
+    font-size: 12px;
+    color: #4caf50;
+    transition: 0.3s;
+}
+
+.btn-close {
+    background-image: url(./assets/icon-close.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    border: none;
+    cursor: pointer;
+    height:15px;
+    padding-left: 15px;
+}
+
+/* Quotoe */
+#quote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quote-div strong {
+    background-color:white;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.quote-div span {
+    font-size:15px;
+    color:whitesmoke;
+}
+
+.author {
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+    /* xmas and newyear */
+    .xmasnewyear-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .xmas-div {
+        margin-right: 30px;
+    }
+
+    /* Quote */
+    .quote-div {
+        margin-top: 140px;
+    }
+
+    .quote-div strong {
+        font-size:25px;
+    }
+    
+    .quote-div span {
+        font-size:20px;
+    }
+}
+
+
+
+
